@@ -9,7 +9,7 @@ body {
     color: white;
     height: 100%;
 }
-
+ 
 input[name="zoom_query"] {
     width: 60%; /* Set search field to occupy 60% width */
     height: 36px; /* Match height with the button */
