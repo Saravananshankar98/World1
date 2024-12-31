@@ -1,0 +1,164 @@
+/* Add universal left and right margin */
+body {
+    margin: 0 20%;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+input[name="zoom_query"] {
+    width: 60%; /* Set search field to occupy 60% width */
+    height: 36px; /* Match height with the button */
+    box-sizing: border-box; /* Ensure padding does not increase width */
+}
+
+input[type="submit"] {
+    height: 36px; /* Ensure the height remains consistent */
+    width: auto; /* Keep the button's natural width */
+    box-sizing: border-box; /* Ensure padding does not increase width */
+}
+
+/* Header styling */
+.header {
+    background-color: black; /* Header background black */
+    color: white; /* Header text white */
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 42px;
+    width: auto;
+}
+
+.header-text {
+    font-size: 18px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Content container */
+.container {
+    padding: 20px;
+    margin: 0 20%; /* 20% left and right margins */
+    background-color: black; /* Container background black */
+    color: white; /* Container text white */
+}
+
+/* Footer styling */
+.footer-links {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 20px 20%; /* Footer aligned with content */
+}
+
+footer p {
+    text-align: center;
+    color: white; /* Footer text white */
+    font-size: 16px;
+}
+
+/* Default link styles */
+a {
+    color: white; /* Links white */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ccc; /* Slightly lighter on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        margin: 0; /* Remove margins for smaller screens */
+    }
+
+    .container {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .header-text,
+    footer p {
+        font-size: 14px;
+    }
+}
+
+.toggle-button {
+    display: inline-block; /* Ensures the element behaves like a button */
+    text-align: center; /* Centers the content inside the button */
+    vertical-align: middle; /* Aligns with adjacent text */
+    font-size: 16px; /* Ensure font size matches your design */
+    cursor: pointer; /* Shows a pointer on hover */
+}
+
+.footer-links {
+    text-align: center;
+    font-size: 14px; /* Apply font size to links */
+}
+
+footer p {
+    text-align: center;
+    color: white; /* Keep footer text color consistent */
+    font-size: 14px; /* Set font size to 14px */
+}
+
+ul.zoom_main_categories {
+    padding-left: 0px;
+}
+
+.zoom-categories-padding{
+    list-style: none;
+    padding-left: 27px;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sub-header-container-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.sub-header-container{
+    display: none;
+    list-style: none;
+    padding-left: 52px;
+}
+.selection-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.date-form-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+#select_period{
+    height: 20px;
+}
